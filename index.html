@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Campagnolo</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+<header>
+    <div id="toggle-box"><label class="menu-toggle-label" for="menu-toggle"><ion-icon class="menu-icon" name="grid-outline"></ion-icon></label></div>
+    <input type="checkbox" name="menu-toggle" id="menu-toggle">
+    <div id="main-nav">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link" data-value="HOME">HOME</a></li>
+                <li class="nav-item"><a href="#about-me" class="nav-link" data-value="ABOUT ME">ABOUT ME</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" data-value="PROJECTS">PROJECTS</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-value="CONTACTS">CONTACTS</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link" data-value="RESUME" target="blank">RESUME</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section id="about-me">
+        <div class="container">
+            <div>
+                <h1>Hi! My name is <span id="name">Mateus Campagnolo</span>.</h1>
+                <h2>I am a professional <span id="role">Scrum Master/Agile Coach & Full Stack web developer</span>.</h2>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="project-card">
+
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <ul>
+                        <li><a href="">mtscampagnolo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="contact-box">
+                    <ul class="social-list">
+                        <li><a href="https://www.linkedin.com/in/mateus-campagnolo-99b4968a/" aria-label="link to Mateus Linkedin profile" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                        <li><a href="https://github.com/mtscampagnolo" aria-label="link to Mateus Github profile" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></li>
+                        <li><a href="https://gitlab.com/mtscampagnolo" aria-label="link to Mateus GitLab profile" target="_blank">
+                            <ion-icon name="logo-gitlab"></ion-icon>
+                        </a></li>
+                        <li><a href="https://codepen.io/mtscampagnolo" aria-label="link to Mateus CodePen profile" target="_blank">
+                            <ion-icon name="logo-codepen"></ion-icon>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
