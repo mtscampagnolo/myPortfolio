@@ -50,7 +50,6 @@ a:hover {
 
 ion-icon {
     position: relative;
-    z-index: -1;
 }
 
 section {
@@ -66,12 +65,18 @@ section {
     height: 100%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ---HEADER--- */
 header {
     width: 100%;
     height: 6rem;
     position: fixed;
     background: linear-gradient(to bottom, var(--bg-color) 50%, rgba(17,17,17,.9));
+    z-index: 10;
 }
 
 #main-nav {
@@ -80,7 +85,7 @@ header {
     top: 0;
     width: 100%;
     height: 100vh;
-    z-index: 2;
+    z-index: 10;
     left: -6000px;
     transition: ease-in-out .5s;
     padding: 3rem;
@@ -109,7 +114,7 @@ header {
     position: absolute;
     right: 0;
     padding: 1rem;
-    z-index: 3;
+    z-index: 20;
 }
 
 .menu-toggle-label,
@@ -126,7 +131,55 @@ header {
 /* ---ABOUT ME--- */
 
 /* ---PROJECTS--- */
+.project-card {
+    max-width: 450px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    z-index: 0;
+    transition: .5s;
+    font-size: 3rem;
+    position: relative;
+}
 
+.project-card:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.project-title {
+    transition: .5s;
+}
+
+.project-card:hover .project-title {
+    opacity: 1;
+    color: var(--txt-color-l);
+}
+
+.project-card ul {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    font-size: 0.5em;
+    background-color: var(--bg-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+}
+
+.project-card:hover ul {
+    opacity: 1;
+}
+
+.project-card ul li {
+    display: inline-block;
+    
+}
+
+.project-card ul li ion-icon {
+    margin-bottom: -4px;
+}
 
 
 /* ---CONTACTS--- */

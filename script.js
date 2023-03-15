@@ -39,7 +39,6 @@ const togglerAnimation = () => {
     !input.checked ? 
         toggler.style.rotate = '135deg' : 
         toggler.style.rotate = '0deg';
-
 }
 
 const menuOff = () => {
@@ -55,6 +54,10 @@ window.addEventListener("DOMContentLoaded", () => {
         navLink.addEventListener('mouseover', fadeMenu);
         navLink.addEventListener('mouseout', fadeBack);
         navLink.addEventListener('click', menuOff);
+    });
+
+    document.querySelectorAll('.proj-link').forEach(navLink => {
+        navLink.addEventListener('mouseover', cypher);
     });
 
     document.querySelector('.menu-toggle-label').addEventListener('click', togglerAnimation);
